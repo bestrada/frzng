@@ -8,5 +8,8 @@ object Application extends Controller {
   def index = Action {
     Ok(views.html.index())
   }
-  
+
+  def where = Action {
+    Ok(views.html.where())
+  }
 }

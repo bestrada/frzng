@@ -11,7 +11,7 @@
 	
 	<title>Freezing Man &mdash; @title</title>
 	<link rel="stylesheet" href="@routes.Assets.at("stylesheets/foundation.css")">
-	<link rel="stylesheet" href="@routes.Assets.at("stylesheets/app.css")">
+	<link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")">
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="@routes.Assets.at("stylesheets/ie.css")">
 	<![endif]-->
@@ -20,9 +20,19 @@
 	<!-- start Mixpanel --><script type="text/javascript">var mpq=[];mpq.push(["init","52c8af1162aa376dd6c917c00e5679d2"]);(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();</script><!-- end Mixpanel -->
 </head>
 
-<body>@content</body>
+<body id="@title">
+	<nav class="topnav container">
+		<div class="row">
+			<a class="photos" href="/photos">Photos</a>
+			<a class="committees" href="/committees">Committees</a>
+			<a class="where" href="/where">Where</a>
+			<a class="home" href="/home">Home</a>
+		</div>
+	</nav>
+	@content
+</body>
 
-<script src="@routes.Assets.at("javascripts/underscore.js")" type="text/javascript"></script>
 <script src="@routes.Assets.at("javascripts/foundation.js")" type="text/javascript"></script>
+<script src="@routes.Assets.at("javascripts/underscore.js")" type="text/javascript"></script>
 <script src="@routes.Assets.at("javascripts/app.js")" type="text/javascript"></script>
 </html>

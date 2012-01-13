@@ -1,0 +1,4 @@
+ - rides & parking
+ - food / booze (diet restrictions)
+ - rentals
+ - photos

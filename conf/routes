@@ -6,7 +6,7 @@
 GET     /                           controllers.Application.index()
 
 # Sub pages
-GET     /home                       controllers.Application.home(code:String)
+GET     /home                       controllers.Application.home(code: String ?= null)
 GET     /where                      controllers.Application.where()
 
 

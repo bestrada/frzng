@@ -1,6 +1,6 @@
 @main(title="Login") {
 <p style="text-align:center; margin-top:48px;">
-<a href="https://www.facebook.com/dialog/oauth?client_id=@play.Configuration.root.getString("facebook.app.id")&redirect_uri=http://frzng.com:9000/home&scope=user_groups,user_photos">
+<a href="https://www.facebook.com/dialog/oauth?client_id=@play.Configuration.root.getString("facebook.app.id")&redirect_uri=http://@play.Configuration.root.getString("environment.host")/home&scope=user_groups,user_photos">
 	<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 width="291.67px" height="469.72px" viewBox="0 0 291.67 469.72" enable-background="new 0 0 291.67 469.72" xml:space="preserve">
 	<g>

@@ -8,6 +8,7 @@ GET     /                           controllers.Application.index()
 # Sub pages
 GET     /home                       controllers.Application.home(code: String ?= null)
 GET     /where                      controllers.Application.where()
+GET     /channel                    controllers.Application.channel()
 
 
 # Map static resources from the /public folder to the /assets URL path
